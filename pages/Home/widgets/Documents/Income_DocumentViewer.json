@@ -1,0 +1,33 @@
+{
+  "animateLoading": true,
+  "bottomRow": 41,
+  "docUrl": "{{getDocument.data.base64Url}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "docUrl"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "bg1vyaydn6",
+  "leftColumn": 0,
+  "mobileBottomRow": 41,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 12.666015625,
+  "parentId": "dtz2fqfkuy",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "topRow": 1,
+  "type": "DOCUMENT_VIEWER_WIDGET",
+  "version": 1,
+  "widgetId": "2d81r71dpb",
+  "widgetName": "Income_DocumentViewer"
+}

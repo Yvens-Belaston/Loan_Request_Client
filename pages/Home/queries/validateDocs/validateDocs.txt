@@ -1,0 +1,5 @@
+{
+	loanRequestInput: {
+		requestStatus: {{this.params.isValid ? "pending" : "document_invalid"}}
+	}
+}

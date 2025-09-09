@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "68b6f1134c3e6631ec5e22b7_cb80262c-a0e1-4e16-9082-9fe47756eade",
+  "id": "RiskyRequest_RequestUtils",
+  "unpublishedCollection": {
+    "name": "RequestUtils",
+    "pageId": "RiskyRequest",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "requestStatusFilters",
+        "value": "Object.values(RequestStatusEnum).map(status => ({\n  code: status,\n  name: status\n}))"
+      }
+    ]
+  }
+}

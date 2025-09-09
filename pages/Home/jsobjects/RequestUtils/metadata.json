@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "68b6f1134c3e6631ec5e22b7_72318da9-0541-4451-a6f4-8c70d685a46e",
+  "id": "Home_RequestUtils",
+  "unpublishedCollection": {
+    "name": "RequestUtils",
+    "pageId": "Home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "requestStatusFilters",
+        "value": "Object.values(RequestStatusEnum).map(status => ({\n  code: status,\n  name: status\n}))"
+      }
+    ]
+  }
+}

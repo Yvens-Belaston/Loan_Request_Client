@@ -1,0 +1,6 @@
+{
+	loanRequestInput: {
+		requestStatus: {{this.params.isOk ? "approved" : "rejected"}},
+		decisionReason: {{this.params.decisionReason}}
+	}
+}

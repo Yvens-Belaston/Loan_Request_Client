@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "68b6f1134c3e6631ec5e22b7_ee77787f-c70a-4b5f-8798-fc51c067641c",
+  "id": "Home_RequestStatusEnum",
+  "unpublishedCollection": {
+    "name": "RequestStatusEnum",
+    "pageId": "Home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "PENDING",
+        "value": "\"pending\""
+      },
+      {
+        "name": "SUBMITTED",
+        "value": "\"submitted\""
+      },
+      {
+        "name": "REJECTED",
+        "value": "\"rejected\""
+      },
+      {
+        "name": "DOCUMENT_INVALID",
+        "value": "\"document_invalid\""
+      }
+    ]
+  }
+}
