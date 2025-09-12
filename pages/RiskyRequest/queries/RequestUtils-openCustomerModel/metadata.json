@@ -26,10 +26,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "RequestUtils.openCustomerModel",
     "name": "openCustomerModel",
     "pageId": "RiskyRequest",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

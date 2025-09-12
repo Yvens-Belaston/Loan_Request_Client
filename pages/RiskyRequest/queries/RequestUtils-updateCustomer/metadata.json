@@ -29,10 +29,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "RequestUtils.updateCustomer",
     "name": "updateCustomer",
     "pageId": "RiskyRequest",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

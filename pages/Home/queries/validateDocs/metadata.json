@@ -50,9 +50,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "validateDocs",
     "pageId": "Home",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

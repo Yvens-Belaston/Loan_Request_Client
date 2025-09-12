@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "RequestUtils.loadRequestWithDocument",
     "name": "loadRequestWithDocument",
     "pageId": "RiskyRequest",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

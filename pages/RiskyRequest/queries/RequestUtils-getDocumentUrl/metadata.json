@@ -26,10 +26,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "RequestUtils.getDocumentUrl",
     "name": "getDocumentUrl",
     "pageId": "RiskyRequest",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

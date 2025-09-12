@@ -29,10 +29,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "RequestUtils.executeValidateDocs",
     "name": "executeValidateDocs",
     "pageId": "RiskyRequest",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
