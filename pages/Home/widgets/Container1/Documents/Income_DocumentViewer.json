@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 41,
+  "bottomRow": 47,
   "docUrl": "{{getDocument.data.base64Url}}",
   "dynamicBindingPathList": [
     {
@@ -20,14 +20,14 @@
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "parentColumnSpace": 12.666015625,
-  "parentId": "m1rucm5d6y",
+  "parentId": "0dek8woyuc",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 63,
-  "topRow": 1,
+  "topRow": 7,
   "type": "DOCUMENT_VIEWER_WIDGET",
   "version": 1,
-  "widgetId": "tpv6b0ip04",
-  "widgetName": "Credit_DocumentViewer"
+  "widgetId": "7qtvd8disb",
+  "widgetName": "Income_DocumentViewer"
 }

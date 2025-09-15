@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 41,
+  "bottomRow": 50,
   "docUrl": "{{getDocument.data.base64Url}}",
   "dynamicBindingPathList": [
     {
@@ -13,21 +13,23 @@
   "isLoading": false,
   "isVisible": true,
   "key": "bg1vyaydn6",
-  "leftColumn": 0,
+  "leftColumn": 1,
   "mobileBottomRow": 41,
   "mobileLeftColumn": 1,
   "mobileRightColumn": 25,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
+  "originalBottomRow": 50,
+  "originalTopRow": 10,
   "parentColumnSpace": 12.666015625,
-  "parentId": "dtz2fqfkuy",
+  "parentId": "34dgea0rrb",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 62,
-  "topRow": 1,
+  "rightColumn": 63,
+  "topRow": 10,
   "type": "DOCUMENT_VIEWER_WIDGET",
   "version": 1,
-  "widgetId": "2d81r71dpb",
-  "widgetName": "Income_DocumentViewer"
+  "widgetId": "j11owlj0rx",
+  "widgetName": "Credit_DocumentViewer"
 }

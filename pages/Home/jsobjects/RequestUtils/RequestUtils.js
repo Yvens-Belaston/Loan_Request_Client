@@ -14,12 +14,12 @@ export default {
 	},
 	async getDocumentUrl(fileName) {
 		storeValue("tab", fileName);
-		const fileKey = fileName.toLowerCase().replaceAll(" ", "-");
-		const attachments = getLoanRequests.data.requests[RequestList.selectedRowIndex].attachments;
-		const att = attachments.find(a => a.fileName === fileKey);
-		if (!att) return showAlert("No attatchment available", "warning");
-		let baseUrl;
+		const index = fileName === "Credit history" ? 0 : 1;
+		const attachments = getLoanRequests.data.requests[RequestList.selectedRowIndex]?.attachments;
+		if (!attachments) return null;
+		const att = attachments[index];
 		const response  = await getDocument.run({ contentStorageId: att.contentStorageId, mimeType: att.mimeType })
+		let baseUrl;
 		baseUrl = response.base64Url;
 		console.log("getDocument response", response);
 		return baseUrl;
@@ -33,9 +33,9 @@ export default {
 			case RequestStatusEnum.SUBMITTED:
 				color = "#3498DB"
 				break;
-			case RequestStatusEnum.APPROVED:
+				/*case RequestStatusEnum.APPROVED:
 				color = "#2ECC71"
-				break;
+				break;*/
 			case RequestStatusEnum.REJECTED:
 				color = " #E74C3C"
 				break;
@@ -49,8 +49,7 @@ export default {
 	async loadRequestWithDocument() {
 		await getLoanRequests.run();
 		const attachments = RequestList.selectedRow.attachments;
-		const fileKey = Documents.selectedTab.toLowerCase().replaceAll(" ", "-");
-		const att = attachments.find(a => a.fileName === fileKey);
+		const att = attachments[0]
 		await getDocument.run({ contentStorageId: att.contentStorageId, mimeType: att.mimeType })
 	},
 	async executeValidateDocs(taskId, isValid) {
