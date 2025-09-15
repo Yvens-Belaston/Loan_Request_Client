@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68b6f1134c3e6631ec5e22b7_4f83966b-30dd-41c9-a2b4-2ae2aef0f3ff",
-  "id": "RiskyRequest_getLoanRequests",
+  "gitSyncId": "68b6f1134c3e6631ec5e22b7_02dca7ef-f5fc-48d5-ab5e-0f25232bf5c5",
+  "id": "RiskyRequest_getTaskContext",
   "pluginId": "bonita-api-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -16,26 +16,13 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/extension/loan_requests/list",
+      "path": "/bpm/userTask/{{RequestList_Risky.selectedRow.taskId}}/context",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [
-        {
-          "key": "p",
-          "value": "{{RequestList_Risky.pageNo - 1}}"
-        },
-        {
-          "key": "c",
-          "value": "10"
-        },
-        {
-          "key": "statusList",
-          "value": "pending"
-        }
-      ],
+      "queryParameters": [],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -48,14 +35,11 @@
     "dynamicBindingPathList": [
       {
         "key": "path"
-      },
-      {
-        "key": "queryParameters[0].value"
       }
     ],
-    "name": "getLoanRequests",
+    "name": "getTaskContext",
     "pageId": "RiskyRequest",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

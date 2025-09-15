@@ -507,7 +507,7 @@
   },
   "scrollContents": true,
   "showReset": false,
-  "sourceData": "{{RequestList?.selectedRow?.customer}}",
+  "sourceData": "{{RequestList_Risky?.selectedRow?.customer}}",
   "submitButtonLabel": "Update",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",

@@ -1,12 +1,22 @@
 {
-  "gitSyncId": "68b6f1134c3e6631ec5e22b7_8996724d-1a69-464a-96e5-61dfef346cdb",
-  "id": "RiskyRequest_RequestUtils.loadRequestWithDocument",
+  "gitSyncId": "68b6f1134c3e6631ec5e22b7_c65eb45d-1795-4f91-8b9c-e5d9bdd409e8",
+  "id": "RiskyRequest_RequestUtils.ExecuteRiskCheck",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
     "actionConfiguration": {
       "encodeParamsToggle": true,
-      "jsArguments": [],
+      "jsArguments": [
+        {
+          "name": "riskTaskId"
+        },
+        {
+          "name": "isOk"
+        },
+        {
+          "name": "decisionReason"
+        }
+      ],
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
     },
@@ -22,10 +32,10 @@
         "key": "body"
       }
     ],
-    "fullyQualifiedName": "RequestUtils.loadRequestWithDocument",
-    "name": "loadRequestWithDocument",
+    "fullyQualifiedName": "RequestUtils.ExecuteRiskCheck",
+    "name": "ExecuteRiskCheck",
     "pageId": "RiskyRequest",
-    "runBehaviour": "ON_PAGE_LOAD",
-    "userSetOnLoad": true
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": false
   }
 }

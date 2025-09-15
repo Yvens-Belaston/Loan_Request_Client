@@ -3,26 +3,21 @@ export default {
 		code: status,
 		name: status
 	})),
-	async updateCustomer(customer, persistenceId) {
-		try {
-			await updateCustomer.run({customer, persistenceId});
-			await getLoanRequests.run();
-			showAlert("Customer updated with success", "success")
-		} catch(err) {
-			showAlert("There was en error updating the customer please try again later", "error")
-		}
-	},
 	async getDocumentUrl(fileName) {
 		storeValue("tab", fileName);
-		const fileKey = fileName.toLowerCase().replaceAll(" ", "-");
-		const attachments = getLoanRequests.data.requests[RequestList.selectedRowIndex].attachments;
-		const att = attachments.find(a => a.fileName === fileKey);
-		if (!att) return showAlert("No attatchment available", "warning");
-		let baseUrl;
+		const index = fileName === "Credit history" ? 0 : 1;
+		const attachments = getLoanRequests.data.requests[RequestList_Risky.selectedRowIndex]?.attachments;
+		if (!attachments) return null;
+		const att = attachments[index];
 		const response  = await getDocument.run({ contentStorageId: att.contentStorageId, mimeType: att.mimeType })
+		let baseUrl;
 		baseUrl = response.base64Url;
 		console.log("getDocument response", response);
 		return baseUrl;
+	},
+	async openCustomerModel(selectedRowIndex) {
+		await RequestList_Risky.setSelectedRowIndex(selectedRowIndex);
+		showModal(Customer_Details_Modal.name);
 	},
 	getCellColorByStatus (status) {
 		let color;
@@ -42,21 +37,19 @@ export default {
 		}
 		return color;
 	},
-	async openCustomerModel(selectedRowIndex) {
-		await RequestList.setSelectedRowIndex(selectedRowIndex);
-		showModal(Customer_Details_Modal.name);
-	},
 	async loadRequestWithDocument() {
-		await getLoanRequests.run();
-		const attachments = RequestList.selectedRow.attachments;
-		const fileKey = Documents.selectedTab.toLowerCase().replaceAll(" ", "-");
-		const att = attachments.find(a => a.fileName === fileKey);
+		const requests = await getLoanRequests.run();
+		if (!requests.length) return null;
+		const attachments = RequestList_Risky.selectedRow.attachments;
+		const att = attachments[0]
 		await getDocument.run({ contentStorageId: att.contentStorageId, mimeType: att.mimeType })
 	},
-	async executeValidateDocs(taskId, isValid) {
+	async ExecuteRiskCheck(riskTaskId, isOk, decisionReason) {
 		try {
-			await validateDocs.run({taskId, isValid});	
+			await reviewLoanRequest.run({riskTaskId, isOk, decisionReason});
 			showAlert("Validation action made with sucess", "success")
+			await getLoanRequests.run();
+			closeModal(Risk_Submission_Modal.name);
 		} catch (err) {
 			showAlert("There was an error", "error")
 		}

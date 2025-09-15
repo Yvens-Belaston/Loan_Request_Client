@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68b6f1134c3e6631ec5e22b7_4f83966b-30dd-41c9-a2b4-2ae2aef0f3ff",
-  "id": "RiskyRequest_getLoanRequests",
+  "gitSyncId": "68b6f1134c3e6631ec5e22b7_a656877f-9725-4d42-b199-9a72c48d3c95",
+  "id": "RiskyRequest_getDocument",
   "pluginId": "bonita-api-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -16,7 +16,7 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/extension/loan_requests/list",
+      "path": "/extension/documents/getBase64Document",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -24,16 +24,12 @@
       ],
       "queryParameters": [
         {
-          "key": "p",
-          "value": "{{RequestList_Risky.pageNo - 1}}"
+          "key": "contentStorageId",
+          "value": "{{this.params.contentStorageId}}"
         },
         {
-          "key": "c",
-          "value": "10"
-        },
-        {
-          "key": "statusList",
-          "value": "pending"
+          "key": "mimeType",
+          "value": "{{this.params.mimeType}}"
         }
       ],
       "timeoutInMillisecond": 10000
@@ -51,9 +47,12 @@
       },
       {
         "key": "queryParameters[0].value"
+      },
+      {
+        "key": "queryParameters[1].value"
       }
     ],
-    "name": "getLoanRequests",
+    "name": "getDocument",
     "pageId": "RiskyRequest",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false

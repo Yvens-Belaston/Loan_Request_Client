@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68b6f1134c3e6631ec5e22b7_4f83966b-30dd-41c9-a2b4-2ae2aef0f3ff",
-  "id": "RiskyRequest_getLoanRequests",
+  "gitSyncId": "68b6f1134c3e6631ec5e22b7_a4808aae-7b50-4f40-a78a-4ea37c297a20",
+  "id": "RiskyRequest_getLoanRequestsCopy",
   "pluginId": "bonita-api-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -33,7 +33,7 @@
         },
         {
           "key": "statusList",
-          "value": "pending"
+          "value": "{{Status_Select.selectedOptionValues.toString()}}"
         }
       ],
       "timeoutInMillisecond": 10000
@@ -51,11 +51,14 @@
       },
       {
         "key": "queryParameters[0].value"
+      },
+      {
+        "key": "queryParameters[2].value"
       }
     ],
-    "name": "getLoanRequests",
+    "name": "getLoanRequestsCopy",
     "pageId": "RiskyRequest",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
