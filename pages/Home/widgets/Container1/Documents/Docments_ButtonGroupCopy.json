@@ -33,6 +33,7 @@
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
       "disabledWhenInvalid": false,
+      "iconAlign": "left",
       "id": "groupButton1",
       "index": 0,
       "isDisabled": false,

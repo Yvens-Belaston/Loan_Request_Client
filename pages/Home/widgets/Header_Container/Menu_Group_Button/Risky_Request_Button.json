@@ -1,17 +1,22 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 4,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonColor": "{{appsmith.currentPageName === \"RiskyRequest\" ? \"#872c87\" : \"#581c87\"}}",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
-      "key": "buttonColor"
+      "key": "borderRadius"
     },
     {
-      "key": "borderRadius"
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "buttonColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -24,7 +29,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "yzoq09m7u0",
-  "leftColumn": 48,
+  "leftColumn": 32.96969696969697,
   "minWidth": 120,
   "mobileBottomRow": 6,
   "mobileLeftColumn": 48,
@@ -32,8 +37,8 @@
   "mobileTopRow": 2,
   "needsErrorInfo": false,
   "onClick": "{{navigateTo('RiskyRequest', {}, 'SAME_WINDOW');}}",
-  "parentColumnSpace": 13.53125,
-  "parentId": "gcizkbf54l",
+  "parentColumnSpace": 2.3203125,
+  "parentId": "en1rc4xfoj",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
@@ -42,9 +47,9 @@
   "responsiveBehavior": "hug",
   "rightColumn": 64,
   "text": "Risky request",
-  "topRow": 2,
+  "topRow": 0,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "fmd81etmrr",
+  "widgetId": "ktqrvjrwnl",
   "widgetName": "Risky_Request_Button"
 }
