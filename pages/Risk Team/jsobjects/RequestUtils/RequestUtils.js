@@ -37,9 +37,11 @@ export default {
 		return color;
 	},
 	async loadRequestWithDocument() {
-		const requests = await getLoanRequests.run();
-		if (!requests.length) return null;
-		if (!RequestList_Risky.selectedRow) return null;
+		await getLoanRequests.run();
+
+		if (!RequestList_Risky.selectedRow &&
+				Object.keys(RequestList_Risky.selectedRow).length === 0) return null;
+
 		const attachments = RequestList_Risky.selectedRow.attachments;
 		const att = attachments[0]
 		await getDocument.run({ contentStorageId: att.contentStorageId, mimeType: att.mimeType })

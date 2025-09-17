@@ -47,9 +47,10 @@
     "taskId",
     "handler",
     "persistenceId",
-    "riskTaskId"
+    "riskTaskId",
+    "attachments"
   ],
-  "columnUpdatedAt": 1758098302833,
+  "columnUpdatedAt": 1758103898720,
   "columnWidthMap": {
     "createdAt": 162,
     "customColumn1": 225,
@@ -140,6 +141,9 @@
     },
     {
       "key": "primaryColumns.riskTaskId.computedValue"
+    },
+    {
+      "key": "primaryColumns.attachments.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -213,6 +217,40 @@
       "label": "amount",
       "notation": "standard",
       "originalId": "amount",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "attachments": {
+      "alias": "attachments",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = RequestList.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"attachments\"])) : attachments })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "attachments",
+      "index": 14,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "attachments",
+      "notation": "standard",
+      "originalId": "attachments",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

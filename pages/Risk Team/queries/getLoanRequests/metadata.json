@@ -55,7 +55,7 @@
     ],
     "name": "getLoanRequests",
     "pageId": "Risk Team",
-    "runBehaviour": "ON_PAGE_LOAD",
-    "userSetOnLoad": false
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": true
   }
 }
