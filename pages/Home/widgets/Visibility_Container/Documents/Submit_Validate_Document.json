@@ -28,7 +28,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 43,
   "needsErrorInfo": false,
-  "onClick": "{{RequestUtils.executeValidateDocs(RequestList.selectedRow.taskId, 'true');}}",
+  "onClick": "{{RequestUtils.executeValidateDocs(RequestList.selectedRow.taskId, true);}}",
   "parentColumnSpace": 13.0986328125,
   "parentId": "tchgb1yfms",
   "parentRowSpace": 10,

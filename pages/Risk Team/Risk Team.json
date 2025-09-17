@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "68b6f1134c3e6631ec5e22b7_e8da7b88-127b-41ac-9dc6-2b413ed01459",
+  "gitSyncId": "68b6f1134c3e6631ec5e22b7_65db46de-e5df-4041-9abc-732c9669881d",
   "unpublishedPage": {
     "customSlug": "",
     "isHidden": false,
@@ -7,19 +7,18 @@
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 820,
+          "bottomRow": 810,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 1292,
+          "minHeight": 680,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 124,
+          "snapRows": 66,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 94,
@@ -28,7 +27,7 @@
         }
       }
     ],
-    "name": "Home",
-    "slug": "home"
+    "name": "Risk Team",
+    "slug": "risk-team"
   }
 }

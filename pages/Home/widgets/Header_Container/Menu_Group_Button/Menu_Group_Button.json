@@ -36,7 +36,7 @@
   "containerStyle": "card",
   "displayName": "Container",
   "dynamicBindingPathList": [],
-  "dynamicHeight": "AUTO_HEIGHT_WITH_LIMITS",
+  "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "hideCard": false,
@@ -58,8 +58,6 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 7,
-  "originalTopRow": 1,
   "parentColumnSpace": 2.3203125,
   "parentId": "9yj50ng2zu",
   "parentRowSpace": 10,
@@ -71,7 +69,7 @@
     "parent",
     "group"
   ],
-  "shouldScrollContents": true,
+  "shouldScrollContents": false,
   "tabId": "",
   "tags": [
     "Layout"

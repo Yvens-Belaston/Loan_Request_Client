@@ -40,7 +40,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "y3tm135a3l",
+      "parentId": "a5focmh2ka",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -51,7 +51,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "q63u3e7706",
+      "widgetId": "ewg9sl69ob",
       "widgetName": "Canvas2"
     },
     {
@@ -86,7 +86,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "y3tm135a3l",
+      "parentId": "a5focmh2ka",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -97,7 +97,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "tchgb1yfms",
+      "widgetId": "h6wobwrip2",
       "widgetName": "Canvas3"
     }
   ],
@@ -116,7 +116,7 @@
       "key": "defaultTab"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "AUTO_HEIGHT_WITH_LIMITS",
   "dynamicPropertyPathList": [
     {
       "key": "isVisible"
@@ -130,11 +130,11 @@
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
   "isLoading": false,
-  "isVisible": "{{!!(RequestList?.selectedRow?.attachments && RequestList?.selectedRow?.attachments.length && RequestList?.selectedRow?.requestStatus == RequestStatusEnum.SUBMITTED)}}",
+  "isVisible": "{{!!(RequestList_Risky?.selectedRow?.attachments && RequestList_Risky?.selectedRow?.attachments.length)}}",
   "key": "rj9cv0359k",
   "leftColumn": 33.52380952380952,
-  "maxDynamicHeight": 9000,
-  "minDynamicHeight": 10,
+  "maxDynamicHeight": 58,
+  "minDynamicHeight": 40,
   "minWidth": 450,
   "mobileBottomRow": 104,
   "mobileLeftColumn": 0,
@@ -145,7 +145,7 @@
   "originalBottomRow": 56,
   "originalTopRow": 0,
   "parentColumnSpace": 4.4296875,
-  "parentId": "ue2od6uyvm",
+  "parentId": "pp4ip7ihy4",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -159,7 +159,7 @@
       "isVisible": true,
       "label": "Credit history",
       "positioning": "vertical",
-      "widgetId": "q63u3e7706"
+      "widgetId": "ewg9sl69ob"
     },
     "tab2": {
       "id": "tab2",
@@ -167,12 +167,12 @@
       "isVisible": true,
       "label": "Proof of Income",
       "positioning": "vertical",
-      "widgetId": "tchgb1yfms"
+      "widgetId": "h6wobwrip2"
     }
   },
   "topRow": 0,
   "type": "TABS_WIDGET",
   "version": 3,
-  "widgetId": "y3tm135a3l",
+  "widgetId": "a5focmh2ka",
   "widgetName": "Documents"
 }

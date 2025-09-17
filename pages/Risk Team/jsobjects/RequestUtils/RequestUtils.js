@@ -3,19 +3,10 @@ export default {
 		code: status,
 		name: status
 	})),
-	async updateCustomer(customer, persistenceId) {
-		try {
-			await updateCustomer.run({customer, persistenceId});
-			await getLoanRequests.run();
-			showAlert("Customer updated with success", "success")
-		} catch(err) {
-			showAlert("There was en error updating the customer please try again later", "error")
-		}
-	},
 	async getDocumentUrl(fileName) {
 		storeValue("tab", fileName);
 		const index = fileName === "Credit history" ? 0 : 1;
-		const attachments = getLoanRequests.data.requests[RequestList.selectedRowIndex]?.attachments;
+		const attachments = getLoanRequests.data.requests[RequestList_Risky.selectedRowIndex]?.attachments;
 		if (!attachments) return null;
 		const att = attachments[index];
 		const response  = await getDocument.run({ contentStorageId: att.contentStorageId, mimeType: att.mimeType })
@@ -40,32 +31,29 @@ export default {
 				color = "#E74C3C"
 				break;
 			case RequestStatusEnum.REJECTED:
-				color = "#E74C3C"
+				color = " #E74C3C"
 				break;
 		}
 		return color;
 	},
-	async openCustomerModel(selectedRowIndex) {
-		await RequestList.setSelectedRowIndex(selectedRowIndex);
-		showModal(Customer_Details_Modal.name);
-	},
 	async loadRequestWithDocument() {
-		await getLoanRequests.run();
-
-		if (!RequestList.selectedRow &&
-				Object.keys(RequestList.selectedRow).length === 0) return null;
-
-		const attachments = RequestList.selectedRow.attachments;
+		const requests = await getLoanRequests.run();
+		if (!requests.length) return null;
+		if (!RequestList_Risky.selectedRow) return null;
+		const attachments = RequestList_Risky.selectedRow.attachments;
 		const att = attachments[0]
 		await getDocument.run({ contentStorageId: att.contentStorageId, mimeType: att.mimeType })
 	},
-	async executeValidateDocs(taskId, isValid) {
+	async ExecuteRiskCheck(riskTaskId, isOk, decisionReason) {
 		try {
-			await validateDocs.run({taskId, isValid});
+			await reviewLoanRequest.run({riskTaskId, isOk, decisionReason});
+			showAlert("Validation action made with sucess", "success");
+			closeModal(Risk_Submission_Modal.name);
+			setInterval(() => 2000);
 			await getLoanRequests.run();
-			showAlert("Validation action made with sucess", "success")
 		} catch (err) {
 			showAlert("There was an error", "error")
 		}
-	},
+
+	}
 }

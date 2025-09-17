@@ -31,6 +31,7 @@
     }
   },
   "columnOrder": [
+    "customColumn2",
     "customer",
     "persistenceVersion",
     "amount",
@@ -44,12 +45,13 @@
     "createdAt",
     "updatedAt",
     "processInstanceId",
+    "attachments",
     "taskId",
     "handler",
     "persistenceId",
     "riskTaskId"
   ],
-  "columnUpdatedAt": 1758098302833,
+  "columnUpdatedAt": 1757430501463,
   "columnWidthMap": {
     "createdAt": 162,
     "customColumn1": 225,
@@ -115,6 +117,9 @@
       "key": "primaryColumns.processInstanceId.computedValue"
     },
     {
+      "key": "primaryColumns.attachments.computedValue"
+    },
+    {
       "key": "primaryColumns.customer.computedValue"
     },
     {
@@ -133,13 +138,25 @@
       "key": "primaryColumns.customColumn1.menuButtonLabel"
     },
     {
-      "key": "primaryColumns.customColumn1.buttonColor"
-    },
-    {
       "key": "primaryColumns.customColumn1.buttonLabel"
     },
     {
       "key": "primaryColumns.riskTaskId.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn2.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn2.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn2.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn2.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.customColumn1.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -148,6 +165,9 @@
     },
     {
       "key": "primaryColumns.requestStatus.textColor"
+    },
+    {
+      "key": "primaryColumns.customColumn2.isCellVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -159,6 +179,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn2.onClick"
     }
   ],
   "enableClientSideSearch": false,
@@ -183,7 +206,7 @@
   "needsErrorInfo": false,
   "onRowSelected": "{{RequestUtils.getDocumentUrl('Credit history');}}",
   "parentColumnSpace": 13.4111328125,
-  "parentId": "lked56027w",
+  "parentId": "bge4j4y4fa",
   "parentRowSpace": 10,
   "primaryColumnId": "persistenceId",
   "primaryColumns": {
@@ -193,7 +216,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{(() => { const tableData = RequestList.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"amount\"])) :  currentRow[\"amount\"] })()}}",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"amount\"])) :  currentRow[\"amount\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -221,13 +244,48 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "attachments": {
+      "alias": "attachments",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"attachments\"])) :  currentRow[\"attachments\"] })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "attachments",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "attachments",
+      "notation": "standard",
+      "originalId": "attachments",
+      "selectOptions": "",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "createdAt": {
       "alias": "createdAt",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "date",
-      "computedValue": "{{(() => { const tableData = RequestList.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"createdAt\"])) :  currentRow[\"createdAt\"] })()}}",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"createdAt\"])) :  currentRow[\"createdAt\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -261,12 +319,11 @@
       "alias": "Customer",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "buttonColor": "{{RequestList.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-      "buttonLabel": "{{RequestList.processedTableData.map((currentRow, currentIndex) => ( currentRow.customer.firstname + ' ' + currentRow.customer.lastname))}}",
+      "buttonLabel": "{{RequestList_Risky.processedTableData.map((currentRow, currentIndex) => ( currentRow.customer.firstname + ' ' + currentRow.customer.lastname))}}",
       "buttonStyle": "rgb(3, 179, 101)",
       "buttonVariant": "TERTIARY",
-      "columnType": "button",
-      "computedValue": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow?.customer?.firstname + ' ' + currentRow?.customer?.lastname)) : currentRow?.customer?.firstname + ' ' + currentRow?.customer?.lastname })()}}",
       "configureMenuItems": {
         "config": {
           "id": "config",
@@ -297,12 +354,51 @@
       "isVisible": true,
       "label": "Customer",
       "labelColor": "#FFFFFF",
-      "menuButtonLabel": "{{RequestList.processedTableData.map((currentRow, currentIndex) => ( currentRow.customer.firstname))}}",
+      "menuButtonLabel": "{{RequestList_Risky.processedTableData.map((currentRow, currentIndex) => ( currentRow.customer.firstname))}}",
       "menuItemsSource": "STATIC",
       "notation": "standard",
-      "onClick": "{{RequestUtils.openCustomerModel(RequestList.triggeredRowIndex);}}",
+      "onClick": "",
       "originalId": "customColumn1",
       "sourceData": [],
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn2": {
+      "alias": "Approve/Reject",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{RequestList_Risky.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{RequestList_Risky.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{RequestList_Risky.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "iconButton",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "modal",
+      "id": "customColumn2",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow.requestStatus === \"pending\")) : currentRow.requestStatus === \"pending\" })()}}",
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Approve/Reject",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{showModal(Risk_Submission_Modal.name);}}",
+      "originalId": "customColumn2",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
@@ -316,7 +412,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = RequestList.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"customer\"])) :  currentRow[\"customer\"] })()}}",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"customer\"])) :  currentRow[\"customer\"] })()}}",
       "currencyCode": "USD",
       "customAlias": "",
       "decimals": 0,
@@ -355,7 +451,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = RequestList.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"decisionReason\"])) :  currentRow[\"decisionReason\"] })()}}",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"decisionReason\"])) :  currentRow[\"decisionReason\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -389,7 +485,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = RequestList.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"externalSolvencyScore\"])) :  currentRow[\"externalSolvencyScore\"] })()}}",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"externalSolvencyScore\"])) :  currentRow[\"externalSolvencyScore\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -423,7 +519,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = RequestList.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"handler\"])) :  currentRow[\"handler\"] })()}}",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"handler\"])) :  currentRow[\"handler\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -457,7 +553,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = RequestList.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"internalScore\"])) :  currentRow[\"internalScore\"] })()}}",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"internalScore\"])) :  currentRow[\"internalScore\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -491,7 +587,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{(() => { const tableData = RequestList.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"persistenceId\"])) :  currentRow[\"persistenceId\"] })()}}",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"persistenceId\"])) :  currentRow[\"persistenceId\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -525,7 +621,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{(() => { const tableData = RequestList.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"persistenceVersion\"])) :  currentRow[\"persistenceVersion\"] })()}}",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"persistenceVersion\"])) :  currentRow[\"persistenceVersion\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -559,7 +655,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{(() => { const tableData = RequestList.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"processInstanceId\"])) :  currentRow[\"processInstanceId\"] })()}}",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"processInstanceId\"])) :  currentRow[\"processInstanceId\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -593,7 +689,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = RequestList.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"purpose\"])) :  currentRow[\"purpose\"] })()}}",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"purpose\"])) :  currentRow[\"purpose\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -627,7 +723,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = RequestList.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"requestStatus\"])) :  currentRow[\"requestStatus\"] })()}}",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"requestStatus\"])) :  currentRow[\"requestStatus\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -648,7 +744,7 @@
       "notation": "standard",
       "originalId": "requestStatus",
       "sticky": "",
-      "textColor": "{{RequestList.processedTableData.map((currentRow, currentIndex) => ( RequestUtils.getCellColorByStatus(currentRow.requestStatus)))}}",
+      "textColor": "{{RequestList_Risky.processedTableData.map((currentRow, currentIndex) => ( RequestUtils.getCellColorByStatus(currentRow.requestStatus)))}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -661,7 +757,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{(() => { const tableData = RequestList.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"riskTaskId\"])) :  currentRow[\"riskTaskId\"] })()}}",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"riskTaskId\"])) :  currentRow[\"riskTaskId\"] })()}}",
       "currencyCode": "USD",
       "customAlias": "",
       "decimals": 0,
@@ -696,7 +792,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{(() => { const tableData = RequestList.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"taskId\"])) :  currentRow[\"taskId\"] })()}}",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"taskId\"])) :  currentRow[\"taskId\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -730,7 +826,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{(() => { const tableData = RequestList.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"termMonths\"])) :  currentRow[\"termMonths\"] })()}}",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"termMonths\"])) :  currentRow[\"termMonths\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -764,7 +860,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "date",
-      "computedValue": "{{(() => { const tableData = RequestList.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"updatedAt\"])) :  currentRow[\"updatedAt\"] })()}}",
+      "computedValue": "{{(() => { const tableData = RequestList_Risky.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"updatedAt\"])) :  currentRow[\"updatedAt\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -808,6 +904,6 @@
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "72ed39ps8d",
-  "widgetName": "RequestList"
+  "widgetId": "oyqaemqtak",
+  "widgetName": "RequestList_Risky"
 }

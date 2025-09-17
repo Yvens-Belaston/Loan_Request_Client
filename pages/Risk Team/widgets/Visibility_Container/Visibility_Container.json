@@ -16,7 +16,7 @@
       "leftColumn": 0,
       "minHeight": 252,
       "parentColumnSpace": 1,
-      "parentId": "nv6njqd768",
+      "parentId": "qz4zwfo6mg",
       "parentRowSpace": 1,
       "props": {
         "canExtend": false,
@@ -29,8 +29,8 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "ue2od6uyvm",
-      "widgetName": "Canvas10"
+      "widgetId": "pp4ip7ihy4",
+      "widgetName": "Canvas10Copy"
     }
   ],
   "containerStyle": "card",
@@ -53,9 +53,9 @@
   "isCanvas": true,
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": "{{!getLoanRequests.data.isRiskTeam}}",
+  "isVisible": "{{getLoanRequests.data.isRiskTeam}}",
   "key": "9v3yvemc74",
-  "leftColumn": 0,
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
   "minWidth": 450,
@@ -74,7 +74,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 64,
   "searchTags": [
     "div",
     "parent",
@@ -89,6 +89,6 @@
   "topRow": 11,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "nv6njqd768",
+  "widgetId": "qz4zwfo6mg",
   "widgetName": "Visibility_Container"
 }

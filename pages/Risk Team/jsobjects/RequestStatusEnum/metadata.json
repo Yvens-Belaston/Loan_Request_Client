@@ -1,0 +1,32 @@
+{
+  "gitSyncId": "68b6f1134c3e6631ec5e22b7_5779824c-763d-441e-b1a6-7fc9335fa1d6",
+  "id": "Risk Team_RequestStatusEnum",
+  "unpublishedCollection": {
+    "name": "RequestStatusEnum",
+    "pageId": "Risk Team",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "PENDING",
+        "value": "\"pending\""
+      },
+      {
+        "name": "SUBMITTED",
+        "value": "\"submitted\""
+      },
+      {
+        "name": "APPROVED",
+        "value": "\"approved\""
+      },
+      {
+        "name": "REJECTED",
+        "value": "\"rejected\""
+      },
+      {
+        "name": "DOCUMENT_INVALID",
+        "value": "\"document_invalid\""
+      }
+    ]
+  }
+}
