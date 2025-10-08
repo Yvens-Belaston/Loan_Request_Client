@@ -12,14 +12,9 @@
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "groupButtons.groupButton1.buttonColor"
-    },
-    {
-      "key": "groupButtons.groupButton2.buttonColor"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "groupButtons.groupButton1.onClick"
@@ -30,7 +25,7 @@
   ],
   "groupButtons": {
     "groupButton1": {
-      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonColor": "#1d4ed8",
       "buttonType": "SIMPLE",
       "disabledWhenInvalid": false,
       "id": "groupButton1",
@@ -44,7 +39,7 @@
       "widgetId": ""
     },
     "groupButton2": {
-      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonColor": "#1d4ed8",
       "buttonType": "SIMPLE",
       "disabledWhenInvalid": false,
       "id": "groupButton2",

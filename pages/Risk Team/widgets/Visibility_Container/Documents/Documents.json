@@ -142,7 +142,7 @@
   "mobileTopRow": 89,
   "needsErrorInfo": false,
   "onTabSelected": "{{RequestUtils.getDocumentUrl(Documents.selectedTab);}}",
-  "originalBottomRow": 56,
+  "originalBottomRow": 55,
   "originalTopRow": 0,
   "parentColumnSpace": 4.4296875,
   "parentId": "pp4ip7ihy4",

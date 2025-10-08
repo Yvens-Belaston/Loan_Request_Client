@@ -3,22 +3,15 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.currentPageName === \"Home\" ? \"#872c87\" : \"#581c87\"}}",
+  "buttonColor": "#1d4ed8",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "buttonColor"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "buttonColor"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"

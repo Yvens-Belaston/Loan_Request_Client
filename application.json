@@ -36,6 +36,10 @@
     {
       "id": "Risk Team",
       "isDefault": false
+    },
+    {
+      "id": "Mock Customer UI",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

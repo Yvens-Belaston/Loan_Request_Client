@@ -90,9 +90,6 @@
       "key": "borderRadius"
     },
     {
-      "key": "submitButtonStyles.buttonColor"
-    },
-    {
       "key": "submitButtonStyles.borderRadius"
     },
     {
@@ -512,7 +509,7 @@
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "boxShadow": "none",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonColor": "#1d4ed8",
     "buttonVariant": "PRIMARY"
   },
   "title": "Customer Details",

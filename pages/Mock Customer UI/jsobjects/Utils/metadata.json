@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "68b6f1134c3e6631ec5e22b7_65a7f936-c695-4bab-877e-d478986c890e",
+  "id": "Mock Customer UI_Utils",
+  "unpublishedCollection": {
+    "name": "Utils",
+    "pageId": "Mock Customer UI",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "files",
+        "value": "null"
+      }
+    ]
+  }
+}

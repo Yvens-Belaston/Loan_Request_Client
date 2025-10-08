@@ -1,0 +1,35 @@
+{
+  "animateLoading": true,
+  "bottomRow": 78,
+  "docUrl": "http://localhost/bonita/API/formsDocumentImage?fileName={{encodeURIComponent(getUpdateTaskContext.data.attachments_ref[1].fileName)}}&document={{getUpdateTaskContext.data.attachments_ref[1].id}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "docUrl"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3x3pxdytka",
+  "leftColumn": 1,
+  "mobileBottomRow": 46,
+  "mobileLeftColumn": 34,
+  "mobileRightColumn": 58,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "originalBottomRow": 87,
+  "originalTopRow": 47,
+  "parentColumnSpace": 6.9375,
+  "parentId": "7n3wglu9kh",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "topRow": 38,
+  "type": "DOCUMENT_VIEWER_WIDGET",
+  "version": 1,
+  "widgetId": "f9ajr7u291",
+  "widgetName": "DocumentViewer_Second_File"
+}

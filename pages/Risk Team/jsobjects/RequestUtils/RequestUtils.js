@@ -39,10 +39,9 @@ export default {
 	async loadRequestWithDocument() {
 		await getLoanRequests.run();
 
-		if (!RequestList_Risky.selectedRow &&
-				Object.keys(RequestList_Risky.selectedRow).length === 0) return null;
+		if (Object.keys(RequestList_Risky.selectedRow).length === 0) return null;
 
-		const attachments = RequestList_Risky.selectedRow.attachments;
+		const attachments = RequestList_Risky.selectedRow?.attachments;
 		const att = attachments[0]
 		await getDocument.run({ contentStorageId: att.contentStorageId, mimeType: att.mimeType })
 	},

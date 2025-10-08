@@ -24,7 +24,7 @@
   ],
   "groupButtons": {
     "groupButton1": {
-      "buttonColor": "#581c87",
+      "buttonColor": "#1d4ed8",
       "buttonType": "SIMPLE",
       "disabledWhenInvalid": false,
       "iconAlign": "left",
@@ -39,7 +39,7 @@
       "widgetId": ""
     },
     "groupButton2": {
-      "buttonColor": "#581c87",
+      "buttonColor": "#1d4ed8",
       "buttonType": "SIMPLE",
       "disabledWhenInvalid": false,
       "id": "groupButton2",

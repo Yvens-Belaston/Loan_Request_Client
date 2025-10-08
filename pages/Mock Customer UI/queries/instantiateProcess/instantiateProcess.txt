@@ -1,0 +1,21 @@
+{
+	"loanRequestInput": {
+		amount:{{Instantiation_Form.data.Amount_Input}},
+		termMonths:{{Instantiation_Form.data.TermMonths_Input}},
+		purpose:{{Instantiation_Form.data.Purpose_Input}},
+		internalScore: 0,
+		externalSolvencyScore: 0,
+		createdAt:{{moment().toISOString()}},
+	updatedAt: {{moment().toISOString()}},
+customer: {
+	firstname:{{Instantiation_Form.data.FirstName_Input}},
+	lastname:{{Instantiation_Form.data.Lastname_Input}},
+	email:{{Instantiation_Form.data.Email_Input}},
+	phone:{{Instantiation_Form.data.Phone_Input}},
+	city:{{Instantiation_Form.data.City_Input}},
+	postalCode: {{Instantiation_Form.data.Postal_Code_Input}},
+	street:{{Instantiation_Form.data.Street_Input}},
+	}
+},
+	attachmentsInput: {{Utils.files}}
+}

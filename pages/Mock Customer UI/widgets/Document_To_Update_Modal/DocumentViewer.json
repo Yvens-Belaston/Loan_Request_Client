@@ -1,0 +1,35 @@
+{
+  "animateLoading": true,
+  "bottomRow": 37,
+  "docUrl": "http://localhost/bonita/API/formsDocumentImage?fileName={{encodeURIComponent(getUpdateTaskContext.data.attachments_ref[0].fileName)}}&document={{getUpdateTaskContext.data.attachments_ref[0].id}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "docUrl"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3x3pxdytka",
+  "leftColumn": 1,
+  "mobileBottomRow": 46,
+  "mobileLeftColumn": 34,
+  "mobileRightColumn": 58,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "originalBottomRow": 46,
+  "originalTopRow": 6,
+  "parentColumnSpace": 6.9375,
+  "parentId": "7n3wglu9kh",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "topRow": 6,
+  "type": "DOCUMENT_VIEWER_WIDGET",
+  "version": 1,
+  "widgetId": "ppe5n855sp",
+  "widgetName": "DocumentViewer"
+}
