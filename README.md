@@ -7,7 +7,7 @@ This is the frontend application made with Ui Builder the dedicated frontend edi
 
 ## Related Projects
 - [Loan Request BPM Server](https://github.com/Yvens-Belaston/Loan_Request_Server/tree/main)
-- [Java Project to instantiate processes and execute certain task](https://github.com/Yvens-Belaston/Loan_Request_Server/new/main?filename=README.md)
+- [Java Project to instantiate processes and execute certain task](https://github.com/Yvens-Belaston/loan_request_customer_actions)
 
 This app is built using Bonita UI Builder.\
 Bonita UI Builder lets you drag-and-drop components to build dashboards, write logic with JavaScript objects and connect to the Bonita API.
