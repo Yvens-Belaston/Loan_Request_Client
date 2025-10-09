@@ -3,15 +3,28 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "boxShadow": "none",
-  "buttonColor": "#1d4ed8",
-  "buttonVariant": "PRIMARY",
+  "buttonColor": "{{appsmith.currentPageName === \"Risk Team\" ? \"white\" : \"#1d4ed8\"}}",
+  "buttonVariant": "{{appsmith.currentPageName === \"Risk Team\" ? \"SECONDARY\" : \"PRIMARY\"}}",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "buttonVariant"
+    },
+    {
+      "key": "buttonColor"
     }
   ],
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "buttonVariant"
+    },
+    {
+      "key": "buttonColor"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -22,7 +35,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "yzoq09m7u0",
-  "leftColumn": 33,
+  "leftColumn": 22,
   "minWidth": 120,
   "mobileBottomRow": 6,
   "mobileLeftColumn": 48,
@@ -38,7 +51,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 64,
+  "rightColumn": 41,
   "text": "Risk Team",
   "topRow": 0,
   "type": "BUTTON_WIDGET",

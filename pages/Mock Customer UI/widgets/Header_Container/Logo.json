@@ -34,11 +34,11 @@
   "originalTopRow": 1,
   "overflow": "NONE",
   "parentColumnSpace": 13.53125,
-  "parentId": "qxauc2axzo",
+  "parentId": "5iagacxwdg",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 16,
+  "rightColumn": 12,
   "shouldTruncate": false,
   "text": "SwiftLoan",
   "textAlign": "LEFT",
@@ -47,6 +47,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "437k0a3a6m",
+  "widgetId": "mq9jk3cqly",
   "widgetName": "Logo"
 }

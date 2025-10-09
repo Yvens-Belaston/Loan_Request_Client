@@ -1,5 +1,13 @@
 export default {
 	files: null,
+	async instantiateProcess(){
+		try {
+			await instantiateProcess.run();
+			navigateTo("Home");
+		} catch(err) {
+			showAlert("There was a problem with the instantiateProcess function", "error")
+		}
+	},
 	async getFileUpload (files) {
 		//const files = FilePicker.files;
 		console.log("FILES: ", files)

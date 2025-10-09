@@ -16,7 +16,7 @@
       "leftColumn": 0,
       "minHeight": 18,
       "parentColumnSpace": 1,
-      "parentId": "kough5tdv1",
+      "parentId": "b7fe27vndb",
       "parentRowSpace": 1,
       "props": {
         "canExtend": false,
@@ -29,8 +29,8 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "en1rc4xfoj",
-      "widgetName": "Canvas9"
+      "widgetId": "tmldmue46k",
+      "widgetName": "Canvas9Copy"
     }
   ],
   "containerStyle": "card",
@@ -59,7 +59,7 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "parentColumnSpace": 2.3203125,
-  "parentId": "9yj50ng2zu",
+  "parentId": "zbeuei9bu4",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -78,6 +78,6 @@
   "topRow": 1,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "kough5tdv1",
+  "widgetId": "b7fe27vndb",
   "widgetName": "Menu_Group_Button"
 }

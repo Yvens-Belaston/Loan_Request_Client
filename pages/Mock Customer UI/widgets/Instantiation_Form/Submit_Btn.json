@@ -3,13 +3,10 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 71,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonColor": "#1d4ed8",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": true,
   "dynamicBindingPathList": [
-    {
-      "key": "buttonColor"
-    },
     {
       "key": "borderRadius"
     }
@@ -31,7 +28,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{instantiateProcess.run().then(() => {\n  showAlert('Process instantiated', 'success');\n}).catch(() => {\n  showAlert('There was a problem with the instantiation of the process', 'error');\n});}}",
+  "onClick": "{{Utils.instantiateProcess();}}",
   "originalBottomRow": 71,
   "originalTopRow": 67,
   "parentId": "jy7kqnejzd",
